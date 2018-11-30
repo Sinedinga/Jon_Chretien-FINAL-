@@ -1,0 +1,285 @@
+body {
+    margin-left: 60px;
+    margin-right: 40px;
+    background-color: black;
+    color:#ccc;
+    font-family: Vollkorn,-apple-system,BlinkMacSystemFont,Georgia,Times New Roman,Times,serif;
+  }
+  
+  /* hr styling */
+  .double {
+    border-top: 3px double #777F88;
+  }
+
+  
+  hr {
+    border: 0.6px solid #9e9e9e
+  }
+  
+  /* header styling */
+  
+  /* This is the avatar picture styling */
+  #heartbeat {
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;
+    
+  }
+  
+  
+  
+  header {
+    text-align: center;
+    font-size: 35px;
+    line-height: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 8%;
+    
+  }
+  
+  h1 {
+   font-size: 60px;
+   text-align: center;
+   color:  #fff;
+   font-weight: 700px;
+   font-size: 50px;
+  }
+  
+  /* This is the "selected works heading" styling */
+  .select {
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  /* This is the "slected works article div" styling */
+  .article {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding-right: 10px;
+    padding-left: 15px;
+    
+  }
+
+  article{
+    padding-left: 10px;
+  }
+  
+  /* This is the "image div" styling */
+  .images {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 10px;
+  }
+  
+  /* This is the "middle image" styling */
+  .img_large {
+   grid-area: 2/1/3/3;
+  }
+  
+  /* This is the "currently listening music" section styling */
+  .music_l {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px 30px 30px 30px;
+    grid-column-gap: 50px;
+    grid-row-gap: 80px;
+    padding: 10px;
+    font-family: none;
+    text-align: center;
+    padding-bottom: 50px;
+    
+  }
+  
+  /* This styling is for the pics in music */
+  .pic_li img {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .stat {
+    float: right;
+  }
+  
+  a:link,:visited {
+    color: yellow;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: grey;
+  }
+  
+  .description {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+   }
+  
+   .role {
+  font-size: 10px;
+  color: #9e9e9e;
+  }
+  
+  img {
+   transition: opacity .3s linear
+  }
+  
+  img:hover {
+    opacity: .65;
+  
+  }
+  
+  
+  
+  /* This is the footer area */
+ 
+  .links_1 {
+    float: left;
+    padding-top: 20px;
+    font-size: 20px;
+    word-spacing: 30px;
+     
+  }
+  
+  .link_2 {
+    padding-left: 560px;
+    position: absolute;
+    float: right;
+  }
+
+  /* YHO! And these are my media queries for a mobile */
+  @media only screen 
+  and (min-device-width: 0px) 
+  and (max-device-width: 480px) {
+    
+    #heartbeat {
+         width: 100px;
+         height: 100px;
+        }
+
+    header {
+         line-height: 23px;
+        }
+      
+     h1 {
+          font-size: 35px;
+        }
+      
+      p {
+         font-size: 20px;
+        }
+
+      .select {
+            font-size: 35px;
+        }
+
+       .article img{
+         width: 200px;
+         height: 200px;
+       }
+        .article {
+          display: grid;
+          grid-template-columns: 1fr;
+          padding-left: 20px;
+        }
+
+      .images, .music_l {
+          display: block;
+       }
+
+       .photos img, .pic_li img {
+           width: 100%;
+           height:100%;
+       }
+
+       
+       .links_1 {
+           font-size: 15px;
+           word-spacing: 5px;
+       }
+         
+       
+  }
+
+  /*  And these are media queries for a tablet */
+  @media only screen 
+  and (min-device-width: 481px) 
+  and (max-device-width: 895px) {
+    #heartbeat {
+      width: 100px;
+      height: 100px;
+    }
+
+    h1{
+      font-size: 30px;
+    }
+
+    p{
+      font-size: 20px
+    } 
+
+    .project-work img {
+    height: 300px;
+    width: 300px;
+    }
+
+    .article{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 50px;
+    }
+
+    .music_l {
+        padding-bottom: 1px;
+    }
+
+    .images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .img_large {
+      grid-area: 2/1/3/3
+    }
+     
+    .pic_li img{
+      height: 100px;
+      width: 100px;
+      
+    }
+} 
+
+/* And these are medida queries for a desktop */
+@media only screen 
+and (min-device-width: 896px)
+and (max-device-width: 1024px) {
+    .article {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .project-work img{
+        height: 250px;
+        width: 250px;
+    }
+
+    .images img, .music_l img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .music_l{
+        padding-bottom: 1px;
+    }
+}
